@@ -1,0 +1,186 @@
+    /* common styles*/
+    
+    body {
+        margin: 0;
+        font-family: 'Poppins', sans-serif;
+        background-color: #FFFFFF;
+    }
+    /*---------------------header section------------------------------*/
+    
+    .header-section {
+        width: 100%;
+        /*height: 677px;*/
+        background-color: #2D25A0;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 102px;
+    }
+    
+    .name-info {
+        padding: 127px 0 0 156px;
+    }
+    
+    .name {
+        font-weight: bold;
+        font-size: 64px;
+        line-height: 80px;
+        color: #FFFFFF;
+    }
+    
+    .live-link a {
+        text-decoration: none;
+        font-size: 16px;
+        color: #FFFFFF;
+        background-color: #E02C6D;
+        padding: 10px 24px;
+    }
+    
+    .live-link {
+        margin-top: -50px;
+    }
+    
+    .banner {
+        margin-top: 153px;
+        margin-bottom: 86px;
+    }
+    /* animation*/
+    
+    .banner {
+        transition: transform 2s ease-out;
+    }
+    
+    .header-section:hover .banner {
+        transform: rotate(360deg);
+    }
+    
+    .live-link {
+        transition: transform 1s 2s;
+    }
+    
+    .header-section:hover .live-link {
+        transform: translate(150px);
+    }
+    /*------------------player list section---------------------------*/
+    
+    .player-list {
+        background-color: #FFFFFF;
+        margin: 70px 210px 165px 180px;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 27px 30px;
+    }
+    
+    .players {
+        /*width: 330px;
+    height: 474px;*/
+        background: #FFFFFF;
+        box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+    }
+    
+    .player-image {
+        margin: 16px 16px;
+    }
+    
+    .player-description {
+        margin: 0 16px;
+    }
+    /*------------------------bonus part---------------------------*/
+    
+    .bonus-1 {
+        margin: 0% 5% 5% 5%;
+        padding: 20px 20%;
+        background-color: rgb(223, 248, 247);
+    }
+    
+    .bonus-1 h4 {
+        font-size: 32px;
+        font-weight: 900;
+        text-align: center;
+        color: rgb(42, 49, 66);
+        background-color: rgb(122, 163, 161);
+    }
+    
+    .team-head {
+        font-size: 24px;
+        font-weight: 900;
+        list-style: none;
+        color: rgb(7, 20, 82);
+    }
+    
+    .bonus-1 ul {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .bonus-2 {
+        text-align: center;
+        margin: 5%;
+        padding: 2% 5% 5% 5%;
+        background-image: url(images/final.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        color: rgb(1, 1, 20);
+    }
+    
+    .bonus-2 h4 {
+        font-size: 32px;
+    }
+    
+    .bonus-2 summary {
+        font-size: 24px;
+    }
+    /*--------------------------------footer---------------------------*/
+    
+    .footer-logo {
+        display: flex;
+        justify-content: center;
+    }
+    
+    .footer-icon {
+        display: flex;
+        justify-content: center;
+    }
+    
+    .footer-icon i {
+        font-size: 20px;
+        padding: 5px;
+    }
+    
+    .footer p {
+        font-size: 18px;
+    }
+    /*-------------Media Query----------*/
+    /* Mobile Devices*/
+    
+    @media only screen and (max-width:688px) {
+        /*-------Header Section------*/
+        .header-section {
+            grid-template-columns: repeat(1, 1fr);
+        }
+        .name-info {
+            padding: 112px 66px 0 16px;
+        }
+        .name {
+            font-size: 36px;
+            line-height: 50px;
+        }
+        .live-link {
+            margin-top: -20px;
+        }
+        .banner {
+            margin-top: 0;
+            margin-bottom: 62px;
+        }
+        /*-------- Players List---------*/
+        .player-list {
+            grid-template-columns: repeat(1, 1fr);
+            grid-gap: 24px 0;
+            margin: 47px 15px 60px 15px;
+        }
+        .bonus-1 h4 {
+            font-size: 28px;
+        }
+        .team-head {
+            font-size: 18px;
+        }
+    }
